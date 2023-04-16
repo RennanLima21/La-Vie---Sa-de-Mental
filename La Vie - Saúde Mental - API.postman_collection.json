@@ -1,0 +1,292 @@
+{
+	"info": {
+		"_postman_id": "09b0e5c0-3ae4-4ba5-a51a-47065029db54",
+		"name": "La Vie - Saúde Mental - API",
+		"description": "Documentação API desafio 3 da Gama Academy - La Vie - Saúde Mental",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26935436"
+	},
+	"item": [
+		{
+			"name": "psicologos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/psicologos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"psicologos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pacientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/pacientes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atendimentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/atendimentos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "psicologos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"Patrick\",\r\n        \"email\": \"patrick@patrick.com\",\r\n        \"senha\": \"patrick\",\r\n        \"apresentacao\": \"Buscando trazer a paz interior para as pessoas\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/psicologos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"psicologos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pacientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"nome\": \"Marta\",\r\n        \"email\": \"marta@email.com\",\r\n        \"idade\": \"1989-04-10\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/pacientes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"email\": \"clarissa@clarissa.com\",\r\n    \"senha\": \"clarissa\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atendimentos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjAsImVtYWlsIjoiY2xhcmlzc2FAY2xhcmlzc2EuY29tIiwibm9tZSI6IkNsYXJpc3NhIiwidXNlclR5cGUiOiJ1c2VyIiwiaWF0IjoxNjgxNjg0MDUwfQ.YO2Yw79DE0WF6sMEj9LXJRSExzH-zgG-a44cly26374",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"data_atendimento\": \"2023-04-16\",\r\n        \"observacao\": \"consulta 2 \",\r\n        \"id_psicologo\":23,\r\n        \"id_paciente\":14 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/atendimentos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "psicologos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"nome\": \"Fabricio Sampaio\",\r\n        \"email\": \"fabricio@fabricio.com\",\r\n        \"senha\": \"fabricio\",\r\n        \"apresentacao\": \"Verdades são duras, mas são necessárias.\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/psicologos/23",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"psicologos",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pacientes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"nome\": \"Marta Souza\",\r\n        \"email\": \"marta@email.com\",\r\n        \"idade\": \"1989-04-10\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/pacientes/19",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pacientes",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "psicologos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/psicologos/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"psicologos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pacientes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/pacientes/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pacientes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atendimentos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/psicologos/30",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"psicologos",
+						"30"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

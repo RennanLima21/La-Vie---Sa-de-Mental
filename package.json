@@ -1,0 +1,27 @@
+{
+  "name": "terceiro-desafio",
+  "version": "1.0.0",
+  "description": "desafio-3-la-vie-saude-mental",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "Majolli,Natal e Rennan",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-jwt": "^8.4.1",
+    "express-validation": "^4.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.2.1",
+    "sequelize": "^6.31.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
