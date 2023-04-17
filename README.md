@@ -12,6 +12,7 @@ Desafio 03 em equipe do Gama Academy, com o objetivo de colocar em prática os c
 - Clone o repositorio para a sua máquina utilizando o git clone
 - No terminal, dentro do projeto, instale todos os pacotes e depêndencias usando o npm install
 - Crie o banco de dados e as tabelas utilizando os comandos da pasta /sql
+- O banco de dados do mysql se encontra na ./src/database
 
 
 # Objetivos de estudo
